@@ -11,6 +11,6 @@ before_deploy:
 
 deploy:
   provider: script
-  script: docker push itsmekhmtz/test_travis1
+  script: docker push itsmekhmtz/test_travis1:node
   on:
     branch: master
