@@ -3,8 +3,8 @@ services:
   - docker
 
 script:
-  - docker build -t mannydesigns/node .
-  - docker images mannydesigns/node
+  - docker build -t itsmekhmtz/node .
+  - docker images itsmekhmtz/node
 
 before_deploy:
   - docker login -u itsmekhmtz -p 3Tw*YaY*w-Q-qZL
