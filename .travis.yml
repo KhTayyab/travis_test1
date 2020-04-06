@@ -3,8 +3,8 @@ services:
   - docker
 
 script:
-  - docker build -t iitsmekhmtz/test_travis1 .
-  - docker images iitsmekhmtz/test_travis1
+  - docker build -t itsmekhmtz/test_travis1 .
+  - docker images itsmekhmtz/test_travis1
 
 before_deploy:
   - docker login -u itsmekhmtz -p 3Tw*YaY*w-Q-qZL
