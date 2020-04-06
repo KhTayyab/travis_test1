@@ -3,14 +3,14 @@ services:
   - docker
 
 script:
-  - docker build -t itsmekhmtz/node .
-  - docker images itsmekhmtz/node
+  - docker build -t iitsmekhmtz/test_travis1 .
+  - docker images iitsmekhmtz/test_travis1
 
 before_deploy:
   - docker login -u itsmekhmtz -p 3Tw*YaY*w-Q-qZL
 
 deploy:
   provider: script
-  script: docker push itsmekhmtz/test_travis1:node
+  script: docker push itsmekhmtz/test_travis1
   on:
     branch: master
